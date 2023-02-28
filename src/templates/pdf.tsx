@@ -150,7 +150,8 @@ const styles = {
     background: "white",
     borderRadius: figmaPxToRealSize(2),
     width: "fit-content",
-    fontSize: figmaPxToRealSize(13),
+    fontSize: figmaPxToRealSize(33),
+    fontFamily: "Allura",
   },
 } satisfies Record<string | symbol, React.CSSProperties>;
 
@@ -220,7 +221,11 @@ const PDF: React.FC<Readonly<PDFProps>> = ({ url }) => {
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800"
-        />
+        ></link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
+          rel="stylesheet"
+        ></link>
         <GlobalStyle />
       </Head>
       <section style={styles.paper}>
