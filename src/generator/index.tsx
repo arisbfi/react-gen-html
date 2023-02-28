@@ -15,7 +15,7 @@ type Template = {
 const templates: Record<string, Template> = {
   pdf: {
     name: "pdf",
-    component: require("../templates/table"),
+    component: require("../templates/pdf"),
   },
   table: {
     name: "table",
@@ -45,6 +45,7 @@ function build() {
   Object.keys(templates).forEach((t) => {
     const template = templates[t];
     const templateString = getComponentString(template.component);
+
     fs.writeFile(
       path.join(__dirname, "../" + GENERATED_DIR, `${template.name}.html`),
       templateString,
