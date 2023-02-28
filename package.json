@@ -1,0 +1,43 @@
+{
+  "name": "react-template",
+  "version": "1.0.0",
+  "description": "",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "gen": "tsup src/generator/index.tsx --format esm,cjs --dts --external react --watch",
+    "gen:serve": "serve __generated__",
+    "gen:run": "nodemon --watch dist libs dist/index.js",
+    "gen:dev": "concurrently \"yarn gen\" \"yarn gen:run\" \"yarn gen:serve\"",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@react-email/button": "^0.0.6",
+    "@react-email/html": "^0.0.4",
+    "@react-email/render": "^0.0.6",
+    "prettier": "^2.8.4",
+    "react": "^18.2.0",
+    "react-email": "^1.7.14"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.2",
+    "@types/prettier": "^2.7.2",
+    "@types/react": "^18.0.28",
+    "concurrently": "^7.6.0",
+    "eslint": "^8.35.0",
+    "eslint-config-custom": "^0.0.0",
+    "nodemon": "^2.0.20",
+    "serve": "^14.2.0",
+    "tsconfig": "^7.0.0",
+    "tsup": "^6.6.3",
+    "typescript": "^4.9.5"
+  }
+}
