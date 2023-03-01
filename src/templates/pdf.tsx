@@ -147,12 +147,15 @@ const styles = {
     marginBottom: "0.7rem",
   },
   signArea: {
-    padding: `${figmaPxToRealSize(17)} ${figmaPxToRealSize(28)}`,
+    padding: `${figmaPxToRealSize(7)} ${figmaPxToRealSize(
+      12
+    )} ${figmaPxToRealSize(2)}`,
     background: "white",
     borderRadius: figmaPxToRealSize(2),
     width: "fit-content",
-    fontSize: figmaPxToRealSize(33),
-    fontFamily: "Homemade Apple",
+    fontSize: figmaPxToRealSize(23),
+    fontFamily: "Astagina Signature",
+    lineHeight: figmaPxToRealSize(30),
   },
 } satisfies Record<string | symbol, React.CSSProperties>;
 
@@ -210,6 +213,16 @@ const GlobalStyle = () => {
     body {
       font-size: ${figmaPxToRealSize(8)},
     }
+
+    @font-face {
+      font-family: 'Astagina Signature';
+      src: url('./fonts/astagina_signature/font.eot');
+      src: url('./fonts/astagina_signature/font.eot?#iefix') format('embedded-opentype'),
+           url('./fonts/astagina_signature/font.woff2') format('woff2'),
+           url('./fonts/astagina_signature/font.woff') format('woff'),
+           url('./fonts/astagina_signature/font.ttf')  format('truetype'),
+           url('./fonts/astagina_signature/font.svg#Astagina Signature') format('svg');
+  }
   `;
 
   return <style dangerouslySetInnerHTML={{ __html: style }} />;
@@ -222,10 +235,6 @@ const PDF: React.FC<Readonly<PDFProps>> = ({ url }) => {
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800"
-        ></link>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap"
-          rel="stylesheet"
         ></link>
         <GlobalStyle />
       </Head>

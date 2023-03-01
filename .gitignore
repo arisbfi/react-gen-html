@@ -53,6 +53,14 @@ typings/
 # Optional eslint cache
 .eslintcache
 
+# moved fonts
+# __generated__/fonts
+# __generated__/**/*.eot
+# __generated__/**/*.otf
+# __generated__/**/*.svg
+# __generated__/**/*.woff
+# __generated__/**/*.woff2
+
 # Microbundle cache
 .rpt2_cache/
 .rts2_cache_cjs/

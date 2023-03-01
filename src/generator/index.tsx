@@ -41,7 +41,27 @@ function getComponentString(
   return pretty;
 }
 
+function moveFonts() {
+  const FONTS_FOLDER = "fonts";
+  fs.cp(
+    `src/templates/${FONTS_FOLDER}`,
+    `${GENERATED_DIR}/${FONTS_FOLDER}`,
+    {
+      recursive: true,
+      force: true,
+    },
+    (err) => {
+      if (err) {
+        console.log(err);
+        throw new Error("fonts cant moved");
+      }
+    }
+  );
+}
+
 function build() {
+  moveFonts();
+
   Object.keys(templates).forEach((t) => {
     const template = templates[t];
     const templateString = getComponentString(template.component);
