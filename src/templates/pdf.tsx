@@ -376,7 +376,7 @@ const PDF: React.FC<Readonly<PDFProps>> = ({ url }) => {
             </ol>
             <div>
               <p style={styles.signTitle}>Tanda Tangan Digital</p>
-              <div style={styles.signArea}>Rudi S.</div>
+              <div style={styles.signArea}>`{`{{name_signed}}`}`</div>
             </div>
           </div>
         </div>
