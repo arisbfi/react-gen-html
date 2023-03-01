@@ -11,7 +11,8 @@ interface PDFProps {
 const FIGMA_VIEWPORT_WIDTH = 595;
 const A4_IN_PX = 793.7008;
 const SCALE_DIFF = A4_IN_PX / FIGMA_VIEWPORT_WIDTH;
-const figmaPxToRealSize = (pxSize: number) => `${SCALE_DIFF * pxSize}px`;
+const figmaPxToRealSize = (pxSize: number) =>
+  `${Math.round(SCALE_DIFF * pxSize)}px`;
 
 type FallbackFont =
   | "Arial"
@@ -151,7 +152,7 @@ const styles = {
     borderRadius: figmaPxToRealSize(2),
     width: "fit-content",
     fontSize: figmaPxToRealSize(33),
-    fontFamily: "Allura",
+    fontFamily: "Homemade Apple",
   },
 } satisfies Record<string | symbol, React.CSSProperties>;
 
@@ -223,7 +224,7 @@ const PDF: React.FC<Readonly<PDFProps>> = ({ url }) => {
           href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800"
         ></link>
         <link
-          href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap"
           rel="stylesheet"
         ></link>
         <GlobalStyle />
