@@ -287,7 +287,7 @@ const PDF: React.FC<Readonly<PDFProps>> = ({ url }) => {
           <div style={styles.title}>Consent Statement</div>
           <div style={styles.content}>
             <p>
-              Sehubungan dengan data/ informasi serta dokumen-dokumen yang saya
+              Sehubungan dengan data/informasi serta dokumen-dokumen yang saya
               berikan tersebut di atas, maka dengan ini Saya menyatakan dengan
               sesungguhnya hal-hal sebagai berikut:
             </p>
@@ -296,10 +296,10 @@ const PDF: React.FC<Readonly<PDFProps>> = ({ url }) => {
                 Identitas Saya sebagaimana tercantum di atas adalah benar nama
                 dan tempat berdomisili Saya pada saat ini, sesuai identitas diri
                 yang telah Saya serahkan kepada BFI. Dalam hal terdapat
-                perubahan dan/ atau perbedaan data (-data) antara yang tercantum
+                perubahan dan/atau perbedaan data (-data) antara yang tercantum
                 dalam identitas diri Saya tersebut di atas dengan fakta yang
                 sebenarnya terjadi, maka Saya akan memberitahukan hal tersebut
-                secara tertulis kepada BFI
+                secara tertulis kepada BFI.
               </li>
               <li style={styles.contentAlphaItem}>
                 Saya bersedia menjadi agent untuk BFI dengan syarat-syarat dan
@@ -323,24 +323,24 @@ const PDF: React.FC<Readonly<PDFProps>> = ({ url }) => {
                 hal-hal sebagai berikut:
                 <ul style={styles.contentUList}>
                   <li style={styles.contentUItem}>
-                    Meminta dan/ atau menerima uang pengurusan/ komisi/ hadiah
-                    atau dalam bentuk apapun dari Pemohon.
+                    Meminta dan/atau menerima uang pengurusan/komisi/hadiah atau
+                    dalam bentuk apapun dari Pemohon.
                   </li>
                   <li style={styles.contentUItem}>
-                    Meminta dan/ atau menerima angsuran dan/ atau pembayaran
-                    dari Konsumen.
+                    Meminta dan/atau menerima angsuran dan/atau pembayaran dari
+                    Konsumen.
                   </li>
                   <li style={styles.contentUItem}>
-                    Meminta dan/ atau menerima asli dokumen/ data (-data) dari
+                    Meminta dan/atau menerima asli dokumen/data (-data) dari
                     Pemohon.
                   </li>
                   <li style={styles.contentUItem}>
                     Memberikan informasi yang menyesatkan kepada Pemohon,
-                    misalnya: ”bisa mempercepat proses pembiayaan”, ”pasti
-                    disetujui” dan lain-lain.
+                    misalnya: "bisa mempercepat proses pembiayaan", "pasti
+                    disetujui" dan lain-lain.
                   </li>
                   <li style={styles.contentUItem}>
-                    Mengubah/ memalsukan data (-data) Pemohon, atau membujuk/
+                    Mengubah/memalsukan data (-data) Pemohon, atau membujuk/
                     mengajarkan Pemohon supaya memalsukan data (-data) yang
                     diberikan kepada BFI.
                   </li>
@@ -348,7 +348,7 @@ const PDF: React.FC<Readonly<PDFProps>> = ({ url }) => {
                     Melakukan hal-hal lain yang dianggap merugikan BFI.
                   </li>
                   <li style={styles.contentUItem}>
-                    Melakukan promosi dengan memakai nama BFI dan/ atau logo
+                    Melakukan promosi dengan memakai nama BFI dan/atau logo
                     dan/atau merek dagang yang merupakan milik BFI untuk semua
                     bentuk media promosi seperti, iklan koran, web internet,
                     poster, dll, selain media promosi resmi yang diizinkan BFI.
