@@ -156,6 +156,11 @@ const styles = {
     fontSize: figmaPxToRealSize(23),
     fontFamily: "Astagina Signature",
     lineHeight: figmaPxToRealSize(30),
+    minWidth: figmaPxToRealSize(130),
+    minHeight: figmaPxToRealSize(30),
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
   },
 } satisfies Record<string | symbol, React.CSSProperties>;
 
