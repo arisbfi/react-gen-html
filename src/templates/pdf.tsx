@@ -49,7 +49,7 @@ const styles = {
     fontFamily: "Open Sans",
   },
   divider: {
-    margin: "10px 0",
+    margin: "5px 0",
   },
   head: {
     border: 0,
@@ -81,7 +81,7 @@ const styles = {
     width: figmaPxToRealSize(119),
   },
   container: {
-    marginBottom: "16px",
+    marginBottom: "10px",
   },
   title: {
     ...shared.content,
@@ -95,14 +95,14 @@ const styles = {
   content: {
     ...shared.content,
     lineHeight: figmaPxToRealSize(12),
-    paddingBottom: figmaPxToRealSize(19),
-    paddingTop: figmaPxToRealSize(13),
+    paddingBottom: figmaPxToRealSize(5),
+    paddingTop: figmaPxToRealSize(10),
     background: "#EEEEF1",
     fontSize: figmaPxToRealSize(8),
   },
   contentTable: {
     ...shared.content,
-    paddingBottom: figmaPxToRealSize(13),
+    paddingBottom: figmaPxToRealSize(12),
     paddingTop: figmaPxToRealSize(7),
     background: "#EEEEF1",
   },
