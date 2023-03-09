@@ -44,7 +44,6 @@ const styles = {
     height: figmaPxToRealSize(842),
     padding: figmaPxToRealSize(32) + " " + figmaPxToRealSize(45),
     boxSizing: "border-box",
-    border: "1px solid red",
     display: "flex",
     flexDirection: "column",
     rowGap: figmaPxToRealSize(8),
@@ -111,40 +110,40 @@ const styles = {
   fieldName: {
     fontWeight: 600,
     fontSize: figmaPxToRealSize(8),
-    padding: "0.7rem 0",
+    padding: "10px 0",
     whiteSpace: "nowrap",
   },
   fieldColon: {
     fontSize: figmaPxToRealSize(8),
-    padding: "0 0.5rem 0",
+    padding: "0 5px 0",
   },
   fieldValue: {
     fontSize: figmaPxToRealSize(8),
     fontWeight: 400,
     width: "40%",
-    borderBottom: "1px solid rgba(46, 67, 80, 0.5)",
+    borderBottom: "1px solid #2E4350",
   },
   fieldEmpty: {
     width: "5%",
   },
   contentAlphaList: {
-    paddingInlineStart: "0.8rem",
+    paddingInlineStart: "12px",
     listStyle: "lower-latin",
   },
   contentAlphaItem: {
-    marginBottom: "0.7rem",
+    marginBottom: "10px",
   },
   contentUList: {
-    paddingInlineStart: "0.8rem",
+    paddingInlineStart: "12px",
     listStyle: "square",
   },
   contentUItem: {
-    marginBottom: "0.3rem",
+    marginBottom: "5px",
   },
   signTitle: {
     fontSize: figmaPxToRealSize(7),
     fontWeight: 600,
-    marginBottom: "0.7rem",
+    marginBottom: "10px",
   },
   signArea: {
     padding: `${figmaPxToRealSize(7)} ${figmaPxToRealSize(
